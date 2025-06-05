@@ -30,7 +30,7 @@ provider "kubernetes" {
 
 resource "kubernetes_deployment_v1" "default" {
   metadata {
-    name = "example-hello-app-deployment"
+    name = "sg-gcp-cluster1"
   }
 
   spec {
