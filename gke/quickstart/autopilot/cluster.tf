@@ -26,7 +26,7 @@ resource "google_compute_subnetwork" "default" {
   name = "example-subnetwork"
 
   ip_cidr_range = "10.0.0.0/16"
-  region        = "northamerica-northeast2-a"
+  region        = "us-central1"
 
   stack_type       = "IPV4_IPV6"
   ipv6_access_type = "INTERNAL" # Change to "EXTERNAL" if creating an external loadbalancer
@@ -46,7 +46,7 @@ resource "google_compute_subnetwork" "default" {
 resource "google_container_cluster" "default" {
   name = "example-autopilot-cluster"
 
-  location                 = "northamerica-northeast2-a"
+  location                 = "us-central1"
   enable_autopilot         = true
   enable_l4_ilb_subsetting = true
 
