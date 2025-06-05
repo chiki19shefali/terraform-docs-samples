@@ -16,7 +16,7 @@
 
 # [START gke_quickstart_autopilot_cluster]
 resource "google_compute_network" "default" {
-  name = "example-network"
+  name = "example-network-1"
 
   auto_create_subnetworks  = false
   enable_ula_internal_ipv6 = true
